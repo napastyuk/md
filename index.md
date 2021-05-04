@@ -14,3 +14,5 @@
 ```
 console.log('Hello world!');
 ```
+
+[ссылка](other-file.md)
