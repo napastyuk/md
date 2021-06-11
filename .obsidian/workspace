@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Просмотр файлов.md",
+            "file": "index.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#linux",
+                "query": "tag:#front",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Просмотр файлов.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +89,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "index.md",
+    "Roadmap/Middle Frontend Roadmap.md",
+    "Roadmap/Список мини-курсов.md",
+    "Roadmap/GIT essentials.md",
+    "other-file.md",
     "Linux/Просмотр файлов.md",
     "Linux/Права на файлы.md",
     "Linux/Untitled.md",
     "Linux/Управление пакетами.md",
-    "Linux/Сжатие и упаковка.md",
-    "Linux/Файлы и папки.md",
-    "Linux/Поиск файла.md",
-    "Linux/Информация о системе.md",
-    "Linux/Выключение, Перезагрузка и Выход из системы.md",
-    "Linux/_Linux_MOC.md"
+    "Linux/Сжатие и упаковка.md"
   ]
 }
