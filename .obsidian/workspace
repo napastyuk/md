@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "PHP/WP debug.md",
             "mode": "source"
           }
         }
@@ -48,12 +48,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 440
+    "width": 186
   },
   "right": {
     "id": "c37f2695776f7636",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "PHP/WP debug.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +88,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "PHP/WP debug.md",
+    "PHP/Cheatsheet.md",
+    "PHP/Untitled.md",
+    "JS/requestAnimationFrame trottling example.md",
+    "JS/mouse event trottling over timeout.md",
+    "JS/Запуск  js функции по window load.md",
+    "JS/Вопросы на собеседовании по JS.md",
     "index.md",
-    "Roadmap/Middle Frontend Roadmap.md",
-    "Roadmap/Список мини-курсов.md",
-    "Roadmap/GIT essentials.md",
-    "other-file.md",
-    "Linux/Просмотр файлов.md",
-    "Linux/Права на файлы.md",
-    "Linux/Untitled.md",
-    "Linux/Управление пакетами.md",
-    "Linux/Сжатие и упаковка.md"
+    "Untitled.md",
+    "Pets Project/Камердинер/Описание проекта.md"
   ]
 }
