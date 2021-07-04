@@ -1,1 +1,1 @@
-[[Middle Frontend Roadmap]]
+https://napastyuk.github.io/md/
