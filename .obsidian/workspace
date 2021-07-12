@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PHP/WP debug.md",
+            "file": "PHP/WP cli.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PHP/WP debug.md",
+                "file": "PHP/WP cli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "PHP/Без названия.md",
+    "Automation/bat.md",
+    "Automation/Untitled.md",
     "PHP/WP debug.md",
     "PHP/Cheatsheet.md",
     "PHP/Untitled.md",
     "JS/requestAnimationFrame trottling example.md",
     "JS/mouse event trottling over timeout.md",
     "JS/Запуск  js функции по window load.md",
-    "JS/Вопросы на собеседовании по JS.md",
-    "index.md",
-    "Untitled.md",
-    "Pets Project/Камердинер/Описание проекта.md"
+    "JS/Вопросы на собеседовании по JS.md"
   ]
 }
