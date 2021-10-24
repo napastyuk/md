@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "readme.md",
+            "file": "JS/Основы программирования.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 186
+    "width": 188,
+    "collapsed": true
   },
   "right": {
     "id": "c37f2695776f7636",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "JS/Основы программирования.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +89,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
-    "Без названия.md",
-    "HTML&CSS/DOM vs. BOM vs. CSSOM.md",
-    "HTML&CSS/Без названия.md",
-    "CSS/Без названия.md",
-    "PHP/wp правильные разрешения для файлов.md",
-    "PHP/Без названия.md",
-    "PHP/WP cli.md",
-    "Automation/bat.md",
-    "Automation/Untitled.md",
-    "PHP/WP debug.md"
+    "JS/Основы программирования.md",
+    "JS/Без названия.md",
+    "JS/Чем функция отличается от метода.md",
+    "JS/requestAnimationFrame trottling example.md",
+    "JS/mouse event trottling over timeout.md",
+    "JS/Browser Engines.md",
+    "JS/Запуск  js функции после загрузки страницы.md",
+    "JS/Вопросы на собеседовании по JS.md",
+    "HTML&CSS/Максимальная спецефичность селектора.md",
+    "HTML&CSS/Без названия.md"
   ]
 }
