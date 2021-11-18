@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JS/Основы программирования.md",
+            "file": "JS/Типы данных в JS.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 188,
-    "collapsed": true
+    "width": 323
   },
   "right": {
     "id": "c37f2695776f7636",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Основы программирования.md",
+                "file": "JS/Типы данных в JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +88,8 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "JS/Типы данных в JS.md",
+    "JS/Вопросы на собеседовании по JS.md",
     "JS/Основы программирования.md",
     "JS/Без названия.md",
     "JS/Чем функция отличается от метода.md",
@@ -96,8 +97,6 @@
     "JS/mouse event trottling over timeout.md",
     "JS/Browser Engines.md",
     "JS/Запуск  js функции после загрузки страницы.md",
-    "JS/Вопросы на собеседовании по JS.md",
-    "HTML&CSS/Максимальная спецефичность селектора.md",
-    "HTML&CSS/Без названия.md"
+    "HTML&CSS/Максимальная спецефичность селектора.md"
   ]
 }
