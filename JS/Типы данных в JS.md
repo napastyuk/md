@@ -48,7 +48,7 @@ b = [3,2]  //так мы изменим только массив b, у масс
  
 Специальные значения или свойства типа Number
 - `+0 === -0`
-- `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY
+- `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY`
 - `-Infinity эквивалентно Number.NEGATIVE_INFINITY`
 - `NuN эквивалетно Number.NuN `
 - `Number.MAX_VALUE`
