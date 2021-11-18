@@ -48,10 +48,17 @@ b = [3,2]  //так мы изменим только массив b, у масс
  
 Специальные значения или свойства типа Number
 - `+0 === -0`
-- `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY`
-- `-Infinity эквивалентно Number.NEGATIVE_INFINITY`
-- `NuN эквивалетно Number.NuN `
-- `Number.MAX_VALUE`
+
+- `NuN эквивалетно Number.NuN` - специльное значение для ошибки приведения типов при арифметических выражениях. Например `Math.sqrt(-1)` или `parseInt('blabla')`
+
+- `Number.MAX_VALUE` - максимальное числовое значение, представимое в JavaScript( `2^1024`).
 - `Number.MIN_VALUE`
-- `Number.MAX_SAFE_INTEGER`
+
+- `Number.MAX_SAFE_INTEGER` - по сути максимальное безопасное целочисленное значение в JavaScript (`2^53 - 1`).
 - `Number.MIN_SAFE_INTEGER`
+
+- `Number.EPSILON` - машинный ноль. по сути максимально разрешённая погрешность  машинного округления для вещественных чисел. То есть `1+Number.EPSILON===1`. Для JS это 2^-52 
+
+- `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY`
+- `-Infinity эквивалентно Number.NEGATIVE_INFINITY` - значение для числа больше чем `Number.MAX_VALUE`. Соотвествует привилам математической бесконечности например `Infinity / Number.MAX_VALUE = Infinity`
+
