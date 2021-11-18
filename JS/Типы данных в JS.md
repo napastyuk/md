@@ -46,11 +46,11 @@ b = [3,2]  //так мы изменим только массив b, у масс
 
 ## Все остальное или объект или специальное значение примитива
  
-Специальные значения типа Number
-- ``+0 === -0`
-- `Infinity === +Infinity`
-- `-Infinity`
-- `NuN`
+Специальные значения или свойства типа Number
+- `+0 === -0`
+- `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY
+- `-Infinity эквивалентно Number.NEGATIVE_INFINITY`
+- `NuN эквивалетно Number.NuN `
 - `Number.MAX_VALUE`
 - `Number.MIN_VALUE`
 - `Number.MAX_SAFE_INTEGER`
