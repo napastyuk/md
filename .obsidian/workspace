@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JS/fetch and CORS.md",
+            "file": "JS/Вопросы на собеседовании по JS.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323
+    "width": 352
   },
   "right": {
     "id": "c37f2695776f7636",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/fetch and CORS.md",
+                "file": "JS/Вопросы на собеседовании по JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
-    "JS/fetch and CORS.md",
-    "JS/Всплытие.md",
     "JS/Вопросы на собеседовании по JS.md",
-    "JS/Чем функция отличается от метода.md",
+    "JS/Промисы.md",
+    "JS/fetch and CORS.md",
+    "JS/JS of the day.md",
     "JS/Типы данных в JS.md",
-    "JS/Основы программирования.md",
     "JS/Запуск  js функции после загрузки страницы.md",
-    "PHP/WP config cheats.md",
-    "PHP/wp разрешения для файлов.md",
-    "PHP/wp режим обслуживания.md"
+    "Automation/bat.md",
+    "JS/Всплытие.md",
+    "JS/Чем функция отличается от метода.md",
+    "JS/Основы программирования.md"
   ]
 }
