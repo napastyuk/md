@@ -25,3 +25,12 @@
 wp @staging search-replace htts://website.ru http://website.local --export=database.sql --allow-root
 wp db import database.sql --dbuser=root --dbpass=''
 ```
+
+## Генерация постов с заполнеными метаполями
+```
+shell_exec('curl -N http://loripsum.net/api/5 | wp post generate --post_content --count=10');
+$post_date = date('Y-m-d-h-i-s',strtotime("-1 days"));
+$post_title = ucfirst(substr(shell_exec('curl -N https://loripsum.net/api/1/short/plaintext'), rand(0, 50) , rand(50, 100)));
+$new_post_id = shell_exec("curl -N http://loripsum.net/api/5 | wp post generate --count=1 --format=ids --post_content --post_status=draft --post_author=StatisticsUser --allow-root");
+update_exec_post($new_post_id, $post_title);
+```
