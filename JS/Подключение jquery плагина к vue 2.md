@@ -69,7 +69,7 @@ export default {
 }
 ```
 
-
+### Список VUE 2 хуков что бы проверять статусы
 ```
 @hook:beforeCreate="console('beforeCreate')"
 @hook:created="console('created')"
