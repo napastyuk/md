@@ -346,3 +346,65 @@ const Cars = (resolve) => {
   {{ item.text }}
 </div>
 ````
+
+### Vue конфигурация приложения
+
+```javascript
+new Vue({
+  el: "#app", //точка входа для приложения
+  data: {
+    //переменные приложения
+    count: 0,
+  },
+  computed: {
+    //всю сложную логику из шаблонов , в том числе из атрибутов выносим сюда
+  },
+  methods: {
+    //методы приложения
+    increment: function (a) {
+      this.count += a;
+    },
+  },
+});
+```
+
+### Vue жизненый цикл
+
+```js
+let vm = new Vue({
+  el: "#app",
+  data: {
+    title: "First title",
+  },
+  methods: {
+    doDestroy: function () {
+      this.$destroy();
+    },
+  },
+  beforeCreate: function () {
+    console.log("Before Create");
+  },
+  created: function () {
+    console.log("Created");
+  },
+  beforeMount: function () {
+    console.log("Before Mount");
+  },
+  mounted: function () {
+    console.log("Mounted");
+  },
+  beforeUpdate: function () {
+    console.log("Before Update");
+  },
+  updated: function () {
+    console.log("Updated");
+  },
+  beforeDestroy: function () {
+    console.log("Before Destroy");
+  },
+  destroyed: function () {
+    console.log("Destroyed");
+  },
+});
+```
+
