@@ -1,13 +1,25 @@
 # Подкдлючение jquery плагина к vue
 Подключаем jquery
-`npm i jquery`
+```
+npm i jquery
+```
+
 потом в простом случае
-`import jQuery from 'jquery' `
+```
+import jQuery from 'jquery'
+```
+
 иногда нужно добавить это
-`window.$ = window.jQuery = jQuery` 
+```
+window.$ = window.jQuery = jQuery
+``` 
+
 иногда возможны случаи, что jquery не успеет инициализирватся
 в таких случая иногда помогает обёртка
-`$(document).ready(function () { /*...*/ });`
+```
+$(document).ready(function () { /*...*/ });
+```
+
 в особо тяжелых случаях нужно включать jquery на уровне webpack на весь проект
 через https://webpack.js.org/plugins/provide-plugin/
 ```js
