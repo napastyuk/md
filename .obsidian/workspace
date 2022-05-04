@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JS/Вопросы на собеседовании по JS.md",
+            "file": "hardware/Восстановление загрузки windows.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Вопросы на собеседовании по JS.md",
+                "file": "hardware/Восстановление загрузки windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "hardware/Восстановление загрузки windows.md",
+    "hardware/Контакты материнки.md",
+    "hardware/Wifi стандарты.md",
     "JS/Вопросы на собеседовании по JS.md",
     "JS/Промисы.md",
     "JS/fetch and CORS.md",
     "JS/JS of the day.md",
     "JS/Типы данных в JS.md",
     "JS/Запуск  js функции после загрузки страницы.md",
-    "Automation/bat.md",
-    "JS/Всплытие.md",
-    "JS/Чем функция отличается от метода.md",
-    "JS/Основы программирования.md"
+    "Automation/bat.md"
   ]
 }
