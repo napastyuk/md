@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "hardware/Восстановление загрузки windows.md",
+            "file": "vue/способы передачи данных между компонентами.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hardware/Восстановление загрузки windows.md",
+                "file": "vue/способы передачи данных между компонентами.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,20 +84,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
+    "vue/способы передачи данных между компонентами.md",
+    "vue/реактивность во Vue 2.md",
+    "vue/жизненый цикл компонента.md",
+    "vue/vue-cheats.md",
+    "vue/vue-компоненты.md",
+    "vue/vueex.md",
+    "Linux/Управление пакетами.md",
+    "PHP/WP debug.md",
     "hardware/Восстановление загрузки windows.md",
-    "hardware/Контакты материнки.md",
-    "hardware/Wifi стандарты.md",
-    "JS/Вопросы на собеседовании по JS.md",
-    "JS/Промисы.md",
-    "JS/fetch and CORS.md",
-    "JS/JS of the day.md",
-    "JS/Типы данных в JS.md",
-    "JS/Запуск  js функции после загрузки страницы.md",
-    "Automation/bat.md"
+    "hardware/Контакты материнки.md"
   ]
 }
