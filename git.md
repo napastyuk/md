@@ -1,52 +1,29 @@
 ## Как склеить коммиты
 
-1. В идеале вы комиитили повторные коммиты так  
-
-
-1. Узнаем сколько коммитов надо склеить  
+1. Узнаем сколько коммитов надо склеить 
 `git cherry -v master | wc -l`
-
-1. Переписываем истьорию на число коммитов из предыдущей команды  
-`git rebase -i HEAD~5`
-или
-`git rebase -i master`
-В интерактивном режиме самый верхний коммит должен быть pick, fixup   
-Он самый ранний и к нему буду приклеиватся остальные.
-
-1. Так как история изменилась на сервер пушим с форсом  
+1. Переписываем историю на число коммитов из предыдущей команды
+`git rebase -i HEAD~5` или `git rebase -i master`. В интерактивном режиме самый верхний коммит должен быть `pick`.  Он самый ранний и к нему буду приклеиватся остальные.
+1. Так как история изменилась на сервер пушим с форсом 
 `git push --force`
 
-## Как поднять свою ветку
-1. в репе larapress-client https://git.fabricmedia.ru/larapress/larapress-client
-`git checkout -b newBranchName`
-`git push`
-2. тоже самое в репе проекта  https://git.fabricmedia.ru/MX/lptpl_nevnov_2017
-`git checkout master`
-`git checkout -b newBranchName`
-`git push`
-3. запустить пайплайн dev_deploy
-4. примаппить свою рабочую директорию в ide к удаленной папке
-5. пересобрать фронт
-```bash
-ssh 82.202.197.18
-cd /home/dev/nevnov.ru/template/newBranchName/current
-npm i && gulp v2
-```
-6. Ветка доступна по адресу newBranchName.dev.nevnov.ru
+## Просим git игнорировать изменения прав файлов (chmod)
+`git config core.fileMode false`
+То же самое с флагом `--global` чтобы настройка применялась для всех репозиториев (использует ~/.gitconfig вместо .git/config)
 
-## Обновление ветки
-1. делаю в этой ветке  
-`git fetch origin master`, 
-1. перезапускаю сборку фронта
-`npm i && gulp gulp v2`
-1. в gitlab запускаю пайплайн dev_deploy
-
-
-## Игнорируем изменения прав файлов (chmod)
-git config core.fileMode false
-Используем флаг --global чтобы настройка применялась для всех репозиториев(использует ~/.gitconfig вместо .git/config)
-
-git config --global core.fileMode false
 ## error: The following untracked working tree files would be overwritten by merge
+Remote файлы несовпадают с локальными. Перепишем в пользу удаленных
+```bash
 git fetch --all
 git reset --hard origin/master
+```
+
+## Переименовать удалённую ветку
+Предположим, что у вас есть ветка oldname. Вы запушили (push) ее на удаленный репозиторий. Теперь вы хотите переименовать ее, чтобы она называлась newname.
+1. Переключиться на ветку, которую вы хотите переименовать.
+1. Переименовать локальную ветку командой: 
+`bash git branch -m oldname newname`
+1.  Удалить удаленную (remote) ветку (oldname), которую вы хотите переименовать:
+`git push origin :oldname`
+1. Загрузить (push) переименованную ветку newname в удаленный репозиторий:
+`git push origin -u newname`
