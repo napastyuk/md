@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "git.md",
+            "file": "JS/Запуск  js функции после загрузки страницы.md",
             "mode": "source",
             "source": true
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "event",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git.md",
+                "file": "JS/Запуск  js функции после загрузки страницы.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
-    "CS/Форматы записи дат.md",
-    "CS/Коды пробельных символов.md",
-    "JS/Основы программирования.md",
+    "JS/Типы данных в JS.md",
+    "JS/tools.md",
     "JS/JS of the day.md",
-    "typescript/Типы данных в TypeScript.md",
-    "vue/реактивность во Vue 2.md",
-    "vue/подгрузка данных из нескольких источников.md",
-    "vue/Загрузка данных в цикле.md",
-    "CS/Полезные регулярки.md",
-    "Automation/bat.md"
+    "JS/mouse event trottling over timeout.md",
+    "CS/Форматы записи дат.md",
+    "CS/Авторизация виды.md",
+    "typescript/вопросы.md",
+    "readme.md",
+    "index.md",
+    "git.md"
   ]
 }
