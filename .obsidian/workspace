@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7e861e9f9a17fbb7",
+        "id": "29a887ba59519888",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "git/Git.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +90,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0c9d5884a4838a22",
+  "active": "29a887ba59519888",
   "lastOpenFiles": [
-    "git/GIT essentials.md",
+    "hardware/Восстановление загрузки windows.md",
     "git/Git.md",
+    "git/GIT essentials.md",
     "Roadmap/Middle Frontend Roadmap.md",
     "Roadmap/Список мини-курсов.md",
     "PHP/Cheatsheet.md",
     "Automation/bat.md",
     "JS/Запуск  js функции после загрузки страницы.md",
     "JS/Типы данных в JS.md",
-    "JS/tools.md",
-    "JS/JS of the day.md"
+    "JS/tools.md"
   ]
 }
