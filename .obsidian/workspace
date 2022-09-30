@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "731e16977e04d346",
+        "id": "7e861e9f9a17fbb7",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "git/Git.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#front",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,7 +81,7 @@
             }
           },
           {
-            "id": "341a41ce03386197",
+            "id": "cf0931e2a07c8d3d",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -90,17 +95,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "731e16977e04d346",
+  "active": "0c9d5884a4838a22",
   "lastOpenFiles": [
-    "HTML&CSS/Как запустить transform только один раз.md",
-    "HTML&CSS/CSS перенос на следующую строку.md",
-    "HTML&CSS/Максимальная спецефичность селектора.md",
-    "HTML&CSS/CSS Line break.md",
-    "JS/Основы программирования.md",
-    "JS/Подключение jquery плагина к vue 2.md",
-    "hardware/Восстановление загрузки windows.md",
-    "hardware/Контакты материнки.md",
-    "hardware/Wifi стандарты.md",
-    "JS/Вопросы на собеседовании по JS.md"
+    "git/GIT essentials.md",
+    "git/Git.md",
+    "Roadmap/Middle Frontend Roadmap.md",
+    "Roadmap/Список мини-курсов.md",
+    "PHP/Cheatsheet.md",
+    "Automation/bat.md",
+    "JS/Запуск  js функции после загрузки страницы.md",
+    "JS/Типы данных в JS.md",
+    "JS/tools.md",
+    "JS/JS of the day.md"
   ]
 }
