@@ -27,3 +27,7 @@ git reset --hard origin/master
 `git push origin :oldname`
 1. Загрузить (push) переименованную ветку newname в удаленный репозиторий:
 `git push origin -u newname`
+
+
+## Склонировать в текущаю папку не создавая имя репозитория
+`git clone https://github.com/napastyuk/md.git .`
