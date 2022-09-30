@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3865c011a90a6800",
+        "id": "731e16977e04d346",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "HTML&CSS/CSS перенос на следующую строку.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML&CSS/CSS перенос на следующую строку.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +90,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3865c011a90a6800",
+  "active": "731e16977e04d346",
   "lastOpenFiles": [
+    "HTML&CSS/Как запустить transform только один раз.md",
+    "HTML&CSS/CSS перенос на следующую строку.md",
+    "HTML&CSS/Максимальная спецефичность селектора.md",
     "HTML&CSS/CSS Line break.md",
     "JS/Основы программирования.md",
     "JS/Подключение jquery плагина к vue 2.md",
     "hardware/Восстановление загрузки windows.md",
     "hardware/Контакты материнки.md",
     "hardware/Wifi стандарты.md",
-    "JS/Вопросы на собеседовании по JS.md",
-    "JS/Промисы.md",
-    "JS/fetch and CORS.md",
-    "JS/JS of the day.md"
+    "JS/Вопросы на собеседовании по JS.md"
   ]
 }
