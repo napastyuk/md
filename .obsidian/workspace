@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3724231d86defc2d",
+        "id": "e91e47aed9ef7fc3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "git.md",
-            "mode": "source",
-            "source": true
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -40,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "event",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -79,24 +74,33 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "cf0931e2a07c8d3d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3724231d86defc2d",
+  "active": "cf0931e2a07c8d3d",
   "lastOpenFiles": [
+    "git/GIT essentials.md",
+    "Roadmap/Middle Frontend Roadmap.md",
+    "Roadmap/Список мини-курсов.md",
+    "PHP/Cheatsheet.md",
+    "git.md",
     "Automation/bat.md",
     "JS/Запуск  js функции после загрузки страницы.md",
     "JS/Типы данных в JS.md",
     "JS/tools.md",
-    "JS/JS of the day.md",
-    "JS/mouse event trottling over timeout.md",
-    "CS/Форматы записи дат.md",
-    "CS/Авторизация виды.md",
-    "typescript/вопросы.md",
-    "readme.md"
+    "JS/JS of the day.md"
   ]
 }
