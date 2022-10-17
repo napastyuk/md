@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3724231d86defc2d",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "JS/События загрузки страницы по порядку.md",
-            "mode": "preview",
-            "source": true
+        "id": "70e961d6a27c829f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3724231d86defc2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JS/События загрузки страницы по порядку.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -85,6 +93,9 @@
     ],
     "direction": "horizontal",
     "width": 300
+  },
+  "ribbon": {
+    "mostRecentAction": ""
   },
   "active": "3724231d86defc2d",
   "lastOpenFiles": [
