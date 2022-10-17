@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "70e961d6a27c829f",
+        "id": "e73f94c85dabcfab",
         "type": "tabs",
         "children": [
           {
-            "id": "3724231d86defc2d",
+            "id": "ade851e22a9c1a24",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JS/События загрузки страницы по порядку.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/События загрузки страницы по порядку.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +92,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3724231d86defc2d",
+  "active": "ade851e22a9c1a24",
   "lastOpenFiles": [
+    "JS/События загрузки страницы по порядку.md",
+    "conflict-files-obsidian-git.md",
     "typescript/Типы данных в TypeScript.md",
     "JS/Свойства объекта event.md",
     "JS/Типы данных в JS.md",
@@ -106,8 +103,6 @@
     "JS/tools.md",
     "JS/Вопросы на собеседовании по JS.md",
     "JS/JS of the day.md",
-    "typescript/вопросы.md",
-    "JS/События загрузки страницы по порядку.md",
-    "JS/Запуск  js функции после загрузки страницы.md"
+    "typescript/вопросы.md"
   ]
 }

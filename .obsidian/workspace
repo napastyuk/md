@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "3724231d86defc2d",
+        "id": "29a887ba59519888",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "event",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,14 +79,23 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "cf0931e2a07c8d3d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3724231d86defc2d",
+  "active": "29a887ba59519888",
   "lastOpenFiles": [
     "typescript/Типы данных в TypeScript.md",
     "JS/Свойства объекта event.md",
