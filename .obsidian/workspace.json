@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "shopify luqid template.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -57,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",

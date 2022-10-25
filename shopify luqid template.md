@@ -2,9 +2,14 @@
 
 все символы, заключенные между 
 
-`{ % comment % } some comment  { % endcomment % } `
+&#123;&#37; comment &#37;&#125; some comment  &#123;&#37; endcomment &#37;&#125;
 
 будут проигнорированы и не будут обрабатываться с помощью языка Liquid.
 тоже самое с тегами 
 
-`{ % literal % } some comment  { % endliteral %}`
+&#123;&#37; literal &#37;&#125; some comment  &#123;&#37; endliteral &#37;&#125;
+
+если в комментариях надо разместить luqid теги то можно воспользоватся тегом row
+```
+{% raw %} any content with curlky brackets {% endraw %}
+```
