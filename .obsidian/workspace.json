@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHP/Laravel.md",
+                "file": "shopify luqid template.md",
                 "mode": "source",
                 "source": true
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "literal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,11 +78,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PHP/Laravel.md",
+                "file": "shopify luqid template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -108,15 +109,15 @@
   },
   "active": "02e92695fb2168b3",
   "lastOpenFiles": [
+    "PHP/Laravel.md",
+    "shopify luqid template.md",
+    "index.md",
     "JS/Промисы.md",
-    "shopify.md",
     "sert.png",
     "readme.md",
-    "index.md",
     "событие.pdf",
     "Свойства.md",
     "Без названия.md",
-    "HTML&CSS/Максимальная спецефичность селектора.md",
-    "JS/Свойства объекта event.md"
+    "HTML&CSS/Максимальная спецефичность селектора.md"
   ]
 }
