@@ -1,4 +1,3 @@
-# Подкдлючение jquery плагина к vue
 Подключаем jquery
 ```
 npm i jquery

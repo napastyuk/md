@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e73f94c85dabcfab",
+        "id": "36edc88655d39087",
         "type": "tabs",
         "children": [
           {
-            "id": "ade851e22a9c1a24",
+            "id": "02e92695fb2168b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "shopify.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "event",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "shopify.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,8 +87,17 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "6315498b51dcb19f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -92,17 +106,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ade851e22a9c1a24",
+  "active": "02e92695fb2168b3",
   "lastOpenFiles": [
-    "JS/События загрузки страницы по порядку.md",
-    "conflict-files-obsidian-git.md",
-    "typescript/Типы данных в TypeScript.md",
+    "sert.png",
+    "readme.md",
+    "index.md",
+    "событие.pdf",
+    "Свойства.md",
+    "Без названия.md",
+    "HTML&CSS/Максимальная спецефичность селектора.md",
     "JS/Свойства объекта event.md",
-    "JS/Типы данных в JS.md",
-    "JS/Browser Engines.md",
-    "JS/tools.md",
-    "JS/Вопросы на собеседовании по JS.md",
-    "JS/JS of the day.md",
-    "typescript/вопросы.md"
+    "HTML&CSS/CSS перенос на следующую строку.md",
+    "HTML&CSS/CSS Line break.md"
   ]
 }
