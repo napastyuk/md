@@ -4,12 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b2d99243e84ff981",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
+        "id": "040462742f64da34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb6e4022f4ea3a4a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -27,7 +33,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -36,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,20 +96,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "b2d99243e84ff981",
+  "active": "cf0931e2a07c8d3d",
   "lastOpenFiles": [
+    "JS/Подключение jquery плагина к vue 2.md",
+    "JS/tools.md",
+    "vue/vue-cheats.md",
+    "JS/Типы данных в JS.md",
+    "JS/снипет индикация циклических ссылок.md",
+    "JS/Промисы.md",
     "HTML&CSS/svg.md",
     "hardware/Восстановление загрузки windows.md",
     "git/Git.md",
-    "git/GIT essentials.md",
-    "Roadmap/Middle Frontend Roadmap.md",
-    "Roadmap/Список мини-курсов.md",
-    "PHP/Cheatsheet.md",
-    "Automation/bat.md",
-    "JS/Запуск  js функции после загрузки страницы.md",
-    "JS/Типы данных в JS.md"
+    "git/GIT essentials.md"
   ]
 }
