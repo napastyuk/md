@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "040462742f64da34",
+        "id": "36edc88655d39087",
         "type": "tabs",
         "children": [
           {
-            "id": "fb6e4022f4ea3a4a",
+            "id": "02e92695fb2168b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "shopify luqid template.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "literal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,10 +77,11 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "shopify luqid template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -84,7 +89,7 @@
             }
           },
           {
-            "id": "cf0931e2a07c8d3d",
+            "id": "6315498b51dcb19f",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -98,17 +103,20 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cf0931e2a07c8d3d",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "02e92695fb2168b3",
   "lastOpenFiles": [
-    "JS/Подключение jquery плагина к vue 2.md",
-    "JS/tools.md",
-    "vue/vue-cheats.md",
-    "JS/Типы данных в JS.md",
-    "JS/снипет индикация циклических ссылок.md",
+    "PHP/Laravel.md",
+    "shopify luqid template.md",
+    "index.md",
     "JS/Промисы.md",
-    "HTML&CSS/svg.md",
-    "hardware/Восстановление загрузки windows.md",
-    "git/Git.md",
-    "git/GIT essentials.md"
+    "sert.png",
+    "readme.md",
+    "событие.pdf",
+    "Свойства.md",
+    "Без названия.md",
+    "HTML&CSS/Максимальная спецефичность селектора.md"
   ]
 }

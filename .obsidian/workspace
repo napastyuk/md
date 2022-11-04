@@ -7,8 +7,12 @@
         "id": "b2d99243e84ff981",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "JS/События загрузки страницы по порядку.md",
+            "mode": "preview",
+            "source": true
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "JS/События загрузки страницы по порядку.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,15 +98,15 @@
   },
   "active": "b2d99243e84ff981",
   "lastOpenFiles": [
-    "HTML&CSS/svg.md",
-    "hardware/Восстановление загрузки windows.md",
-    "git/Git.md",
-    "git/GIT essentials.md",
-    "Roadmap/Middle Frontend Roadmap.md",
-    "Roadmap/Список мини-курсов.md",
-    "PHP/Cheatsheet.md",
-    "Automation/bat.md",
-    "JS/Запуск  js функции после загрузки страницы.md",
-    "JS/Типы данных в JS.md"
+    "typescript/Типы данных в TypeScript.md",
+    "JS/Свойства объекта event.md",
+    "JS/Типы данных в JS.md",
+    "JS/Browser Engines.md",
+    "JS/tools.md",
+    "JS/Вопросы на собеседовании по JS.md",
+    "JS/JS of the day.md",
+    "typescript/вопросы.md",
+    "JS/События загрузки страницы по порядку.md",
+    "JS/Запуск  js функции после загрузки страницы.md"
   ]
 }
