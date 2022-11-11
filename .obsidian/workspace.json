@@ -4,18 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7a0a03309aeacc63",
+        "id": "9ec7c5425eefce59",
         "type": "tabs",
         "children": [
           {
-            "id": "37e832de147f558c",
+            "id": "ba25693b9ffc3d9a",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -101,10 +98,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "37e832de147f558c",
+  "active": "ba25693b9ffc3d9a",
   "lastOpenFiles": [
-    "HTML&CSS/Медиа запросы для браузерного зума.md",
     "HTML&CSS/Браузерный и мобильный зум.md",
+    "HTML&CSS/Медиа запросы для браузерного зума.md",
     "HTML&CSS/Максимальная спецефичность селектора.md",
     "HTML&CSS/Как запустить transform только один раз.md",
     "Automation/Outlook tips.md",
