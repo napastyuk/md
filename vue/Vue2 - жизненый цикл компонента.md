@@ -1,5 +1,7 @@
 ## Vue жизненый цикл
 
+#vue2
+
 ```js
 let vm = new Vue({
   el: "#app",

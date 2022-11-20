@@ -1,8 +1,12 @@
 ### Упрощенный синтаксис с `script setup`
+
+#vue3
+
 ```javascript
 <script setup>
 //обязательный импорт
 import { ref,reactive } from 'vue'
+
 //задание переменных
   
 //reactive работает только с объектами
@@ -19,3 +23,5 @@ counter.value.count++;
   <p>{{counter.count}}</p>	
 </template>
 ```
+
+Написать про вариант script без setup

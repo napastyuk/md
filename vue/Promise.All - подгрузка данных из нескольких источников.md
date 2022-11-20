@@ -1,4 +1,4 @@
-Promise.All
+#vue2
 
 ```javascript
 //...
