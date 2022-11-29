@@ -25,8 +25,11 @@
 		loop: true,		 //зациклить воспроизведение
 		success: function(media, node, instance) {
 			/*
-			 * скрытие контролов работает только через css. Для полного скрытия в стилях должено содержаться:
-			 * .mejs-controls-hide { display: none !important; visibility: hidden !important}  
+			 * скрытие контролов работает только через css. 
+			 * Для полного скрытия в стилях должено содержаться:
+			 * .mejs-controls-hide {
+			 * display: none !important; 
+			 * visibility: hidden !important}  
 			 * */
 			node.closest('.mejs-container').querySelector('.mejs-controls').classList.add('mejs-controls-hide')
 			observer.observe(node);			
