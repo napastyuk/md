@@ -23,6 +23,7 @@
 	$('video').mediaelementplayer({
 		startVolume: 0,  //начальный уровень громкости
 		loop: true,		 //зациклить воспроизведение
+		stretching: responsive,
 		success: function(media, node, instance) {
 			/*
 			 * скрытие контролов работает только через css. 
