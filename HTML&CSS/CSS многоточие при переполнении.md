@@ -1,0 +1,3 @@
+```css
+text-overflow: ellipsis;
+```
