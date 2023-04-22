@@ -4,3 +4,30 @@
 3. ` cd ~/Homestead/`
 4. `git checkout release`
 5. запустить `init.bat`
+
+
+
+
+```
+vagrant plugin install vagrant-proxyconf
+
+export https_proxy='http://login:password@ip:port/' 
+export VAGRANT_HTTP_PROXY=${http_proxy} 
+export VAGRANT_NO_PROXY="127.0.0.1"
+```
+
+VS code ssh config
+```
+Host Homestead
+    HostName 127.0.0.1
+    Port 2222
+    IdentityFile /d/php/Homestead/.vagrant/machines/homestead/virtualbox/privat_key
+    User vagrant
+```
+
+
+
+#php #vargant
+
+
+
