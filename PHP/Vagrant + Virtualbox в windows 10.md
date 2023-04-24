@@ -25,6 +25,23 @@ Host Homestead
     User vagrant
 ```
 
+```
+//запуск ВМ
+vagrant up
+
+//остановка ВМ
+vagrant halt
+
+//зайти в ВМ
+vagrant ssh
+
+//перезагрузить ВМ
+vagrant reload
+
+//удалить ВМ
+vagrant destroy
+```
+
 
 
 #php #vargant
