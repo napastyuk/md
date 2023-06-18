@@ -34,7 +34,7 @@ git reset --hard origin/master
 
 ---
 
-## Склонировать в текущаю папку не создавая имя репозитория
+## Склонировать в текущую папку не создавая имя репозитория
 `git clone https://github.com/napastyuk/md.git .`
 
 ---
@@ -94,3 +94,15 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 `-S"Hello, World!"` - только коммиты котоыре содержат Hello wold в изменённых строчках
 `-G"Hello, World*"` - тоже только для поиск по маске
 Другие https://devhints.io/git-log
+
+---
+
+## Запушить новую локальную ветку на сервер
+`git push -u origin Название_ветки`
+
+---
+
+## Удалить ветку локально
+`git branch --delete Название_ветки`
+или
+`git branch -D Название_ветки`
