@@ -7,3 +7,5 @@ function wp_maintenance_mode(){
 }
 add_action('get_header', 'wp_maintenance_mode');
 ```
+
+#wordpress  #php 

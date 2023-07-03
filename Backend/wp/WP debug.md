@@ -32,6 +32,7 @@ error_log( print_r( $value, 1) ); // Любые данные
 ```
 
 Если страница и админ панель грузится можно воспользоватся более удобными инструментами. Вот комбинация плагинов, которая мне показалась самой удобной и информативной.   
+
 **Debug This**
 https://wordpress.org/plugins/debug-this/
 удобный вывод всех внутренных WP объектов.
@@ -56,6 +57,7 @@ do_action( 'qm/debug', $var );
 
 Документация по Query Monitor https://querymonitor.com/docs/
 
+#wordpress #php #логи
 
 
 

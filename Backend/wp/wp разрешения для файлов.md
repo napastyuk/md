@@ -15,5 +15,7 @@ chown www-data:www-data -R .git
 для установки нужен find . -type d -exec chmod 767 {} \;
 ```
 
-Вариант если не хватате стандартных разрешений
+Вариант если не хватает стандартных разрешений
 https://wordpress.org/support/article/changing-file-permissions/#using-the-command-line
+
+#wordpress #linux #devops 

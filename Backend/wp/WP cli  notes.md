@@ -1,7 +1,7 @@
 ## Вывод значений кастомных полей в WCI
 `$ wp eval 'print_r(get_fields(1, false));'`
 
-Импорт /экспорт значний спокойно делается стандарными средствами тк  acf хранит данные как записи
+Импорт /экспорт значений  делается стандартными средствами т к  ACF хранит данные как записи
 
 ## Пример шоткатов для импорта-экспорта базы
 Сохранить в wp-cli.yml следующий код:
@@ -26,7 +26,7 @@ wp @staging search-replace htts://website.ru http://website.local --export=datab
 wp db import database.sql --dbuser=root --dbpass=''
 ```
 
-## Генерация постов с заполнеными метаполями
+## Генерация постов с заполненными метаполями
 ```
 shell_exec('curl -N http://loripsum.net/api/5 | wp post generate --post_content --count=10');
 $post_date = date('Y-m-d-h-i-s',strtotime("-1 days"));
@@ -34,3 +34,6 @@ $post_title = ucfirst(substr(shell_exec('curl -N https://loripsum.net/api/1/shor
 $new_post_id = shell_exec("curl -N http://loripsum.net/api/5 | wp post generate --count=1 --format=ids --post_content --post_status=draft --post_author=StatisticsUser --allow-root");
 update_exec_post($new_post_id, $post_title);
 ```
+
+
+#wordpress  #devops #cli #database 
