@@ -9,3 +9,5 @@ let mouseFollower = e => {
 	}
 };
 ```
+
+#js #performance 

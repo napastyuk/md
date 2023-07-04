@@ -13,7 +13,7 @@ import jQuery from 'jquery'
 window.$ = window.jQuery = jQuery
 ``` 
 
-иногда возможны случаи, что jquery не успеет инициализирватся
+иногда возможны случаи, что jquery не успеет инициализироваться
 в таких случая иногда помогает обёртка
 ```
 $(document).ready(function () { /*...*/ });
@@ -50,7 +50,7 @@ module.exports = {
 или если плагин со старой модульной системой
 `require("whateverplugin");`
 
-Ипользуем внутри Vue
+Используем внутри Vue
 ```js
 export default {
   data () {
@@ -68,17 +68,4 @@ export default {
 }
 ```
 
-### Список VUE 2 хуков что бы проверять статусы
-```
-@hook:beforeCreate="console('beforeCreate')"
-@hook:created="console('created')"
-@hook:beforeMount="console('beforeMount')"
-@hook:mounted="console('mounted')"
-@hook:beforeUpdate="console('beforeUpdate')"
-@hook:updated="console('updated')"
-@hook:activated="console('activated')"
-@hook:deactivated="console('deactivated')"
-@hook:beforeDestroy="console('beforeDestroy')"
-@hook:destroyed="console('destroyed')"
-@hook:errorCaptured="console('errorCaptured')"
-```
+#jquery #vue #webpack

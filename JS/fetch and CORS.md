@@ -1,11 +1,13 @@
-## Почему не работает fetch отправленный напрямую из бразузера?
+## Почему не работает fetch отправленный напрямую из браузера?
 
 Потому что ответ сервера должен включать http заголовок `Access-Control-Allow-Origin: * `  если его нету от запрос на https адреса не пройдет по CORS
 
-**Что делать?** 
+## Что делать? 
 Поднимать локальный сервер с https или прокси сервер, который будет добавлять нужные заголовки
 
-**Как поднять локальный сервер в VScode?**
-Сначала разбираеся с локальным самоподписанным  сертификатом. Гуглить по запросу `How to create a self-signed SSL Certificate for windows`  . Потом добавляем сертификат в настройки VS code Live Server
+## Как поднять локальный сервер в VScode?
+Сначала разбираемся с локальным само подписанным  сертификатом. Гуглить по запросу `How to create a self-signed SSL Certificate for windows`  . Потом добавляем сертификат в настройки VS code Live Server
 https://github.com/ritwickdey/vscode-live-server/blob/master/docs/settings.md
 настройка `liveServer.settings.https`
+
+#сети #devops 

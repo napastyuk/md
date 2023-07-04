@@ -12,4 +12,6 @@ let mouseFollower = e => {
 };
 ```
 
-устревшая альтернатива через `timeout` [[mouse event trottling over timeout]]
+устаревшая альтернатива через `timeout` [[mouse event trottling over timeout]]
+
+#js #performance 
