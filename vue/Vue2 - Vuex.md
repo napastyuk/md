@@ -1,4 +1,3 @@
-#vue2
 # Vuex
 
 ## заведение стора
@@ -33,14 +32,16 @@ new Vue({
 }).$mount("#app");
 ```
 
-чтение из стора
+## чтение из стора
 
 ```javascript
 this.$store.state.counter;
 ```
 
-запись в стор
+## запись в стор
 
 ```javascript
 this.$store.state.counter += val;
 ```
+
+#vue #vue2 #state-manager

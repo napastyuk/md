@@ -7,4 +7,4 @@ this.sourceArr[newPosition] = this.sourceArr.splice(oldPosition, 1, this.sourceA
 ```
 Метод основан на том , что splice возвращает удаленные элементы( `[0] в конце строки`) 
 
-#vue 
+#vue #реактивность 

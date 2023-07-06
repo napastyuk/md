@@ -1,6 +1,3 @@
-#vue2
-# Vue
-
 ## Vue CLI
 
 ```bash
@@ -348,7 +345,7 @@ const Cars = (resolve) => {
 </div>
 ````
 
-# Vue конфигурация приложения
+## Vue конфигурация приложения
 
 ```javascript
 new Vue({
@@ -369,3 +366,6 @@ new Vue({
 });
 ```
 
+
+
+#vue #vue2

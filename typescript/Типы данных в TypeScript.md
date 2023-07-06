@@ -35,3 +35,7 @@ let list: Array<number> = [10, 20, 30];
 let colors: Array<string> = ["red", "green", "blue"];
 ```
 не смотря на то что `number` с маленькой буквы, `Array` всегда с большой!
+
+
+
+#typescript  #типизация 

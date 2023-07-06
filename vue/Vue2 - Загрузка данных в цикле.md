@@ -1,5 +1,3 @@
-#vue2
-
 ```javascript
 loadQueriesList() {
 	let requestLimit = 1000;
@@ -26,3 +24,5 @@ loadQueriesList() {
 },
 ```
 вызов `libAjax.get` присваивается в переменную `promise`. И в последнем `then()` вызывается заново если нужно сделать запрос  со следующим сд№мгу2мгувигом.
+
+#vue #vue2 #асинхронность 

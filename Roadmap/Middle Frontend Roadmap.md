@@ -2,7 +2,7 @@
 
 1. [ ] Essential
 	1. [ ] English(pre-intermediate)
-	2. [ ] [[Network]]
+	2. [ ] Network
 		1. [ ] URL
 		2. [ ] HTTP
 		3. [ ] DNS
@@ -34,7 +34,7 @@
 	1. [ ] Jest
 	2. [ ] Puppeteer
 	3. [ ] Cypress
-5. [ ] [[GIT essentials]]
+5. [ ] GIT essentials
 	1. Init repo
 	2. 3 stages
 	3. Working with staging
@@ -89,11 +89,4 @@
 		3. [ ] GitLabCI
 		4. [ ] Github Actions
 
-#front
-
-
-
-
-
-
-	
+#front #roadmap

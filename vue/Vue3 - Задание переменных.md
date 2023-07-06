@@ -1,7 +1,4 @@
 ### Упрощенный синтаксис с `script setup`
-
-#vue3
-
 ```javascript
 <script setup>
 //обязательный импорт
@@ -24,4 +21,6 @@ counter.value.count++;
 </template>
 ```
 
-Написать про вариант script без setup
+TODO: Написать про вариант script без setup
+
+#vue #vue3 
