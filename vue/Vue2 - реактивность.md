@@ -43,6 +43,15 @@ vm.items.splice(indexOfItem, 1, newValue)
 
 ```
 
+Зато удаление можно делать явно , встроенной командой 
+```javascript
+this.$delete(this.targetArr, index)
+```
+
+
+
 во vue3 такой проблемы нету, там реактивность сделана через `proxy` 
+
+
 
 #vue #vue2 #реактивность
