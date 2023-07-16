@@ -1,3 +1,5 @@
+Тротлинг скрола через таймаут
+
 ```js
 let timeoutID;
 let mouseFollower = e => {                

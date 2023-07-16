@@ -1,3 +1,4 @@
+Тротлинг скрола через requestAnimationFrame
 ```js
 someWrapper.addEventListener('mousemove', mouseFollower, false);
 
