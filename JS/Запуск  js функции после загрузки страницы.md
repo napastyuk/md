@@ -5,4 +5,5 @@ window.addEventListener("load", function (event) {
 });
 ```
 
+также можно делать с jquery [[jQuery - выполнение после инициализации]]
 #js 
