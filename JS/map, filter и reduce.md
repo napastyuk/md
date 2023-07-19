@@ -6,6 +6,6 @@
 
 эти и другие методы наглядно 
 
-![[js_array_methods.jpg]]
+![](js_array_methods.jpg)
 
-#js 
+#js #js/array-methods

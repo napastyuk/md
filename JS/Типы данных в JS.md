@@ -61,4 +61,4 @@ b = [3,2]  //так мы изменим только массив b, у масс
 - `Infinity === +Infinity эквивалентно Number.POSITIVE_INFINITY`
 - `-Infinity эквивалентно Number.NEGATIVE_INFINITY` - значение для числа больше чем `Number.MAX_VALUE`. Соответствует правилам математической бесконечности например `Infinity / Number.MAX_VALUE = Infinity`
 
-#js #wtf-js 
+#js #js/wtf-js #js/типизация
