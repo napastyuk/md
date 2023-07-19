@@ -12,3 +12,5 @@ Vue.prototype.$store = store; //хак чтобы стор корректно в
 
 store.commit('setIsLoggedIn', userData);  //замокаем данные пользователя в сторе
 ```
+
+#vue #storybook #vuex
