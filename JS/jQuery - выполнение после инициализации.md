@@ -8,6 +8,12 @@ window.addEventListener("load", function (event) {
 });
 ```
 
+```javascript
+document.addEventListener("DOMContentLoaded", function(event) {
+
+});
+```
+
 Так же для ускорения загрузки jquery можно сделать:
 - перенести jquery c cdn в локальные скрипты
 - использовать минифицированную версию дистрибутива
