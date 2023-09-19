@@ -81,7 +81,7 @@
 - [Переменные в PHP](PHP/Переменные в PHP.md)
 - [Типы данных в PHP](PHP/Типы данных в PHP.md)
 - [Vagrant настройка в Windows 10](PHP/Vagrant настройка в Windows 10.md)
-- [cheatsheet](PHP/cheatsheet.md)
+- [PHP cheatsheet](PHP%20cheatsheet.md)
 - [Умный дом](Pets Project/Умный дом.md)
 - [Описание проекта](Pets Project/Камердинер/Описание проекта.md)
 - [Выключение, Перезагрузка и Выход из системы](Linux/Выключение, Перезагрузка и Выход из системы.md)

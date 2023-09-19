@@ -7,3 +7,5 @@
 `docker-compose ps` вывести список контейнеров
 `docker-compose exec [service name] [command]` выполнить команду в контейнере
 `docker-compose images` список образов
+
+#docker #cheatsheet
