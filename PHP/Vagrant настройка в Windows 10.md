@@ -44,13 +44,13 @@ vagrant up
 
 9. После запуска команды `up`. Vagrant скачает образ  виртуальной машины от Laravel . Запустит в virtualBox виртуальную машину, и создаст поверх неё Box. То есть некий образ который позволит работать с виртуалкой быстрее и добавит версионирование.  После того как все скачается , если все прошло хорошо то в браузере можно открывать http://homestead.test/
 
-10. Подключение к запущенной виртуалке через VS code, плагин Remote SSH
+10. Подключение к запущенной виртуалке через  SSH / SFTP
 ```yaml
-Host Homestead
-    HostName 127.0.0.1
+    HostName 127.0.0.1 или localhost
     Port 2222
-    IdentityFile /d/php/Homestead/.vagrant/machines/homestead/virtualbox/privat_key
+    sshKey /d/php/Homestead/.vagrant/machines/homestead/virtualbox/privat_key
     User vagrant
+    Password vagrant
 ```
 
 Tips:
