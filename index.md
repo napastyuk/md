@@ -74,7 +74,7 @@
 - [Promise.All - подгрузка данных из нескольких источников](vue/Promise.All - подгрузка данных из нескольких источников.md)
 - [Vue2 - компоненты](vue/Vue2 - компоненты.md)
 - [Типы данных в TypeScript](typescript/Типы данных в TypeScript.md)
-- [вопросы](typescript/вопросы.md)
+- [вопросы](Typescript/вопросы.md)
 - [Список мини-курсов](Roadmap/Список мини-курсов.md)
 - [Vagrant cheatsheet](PHP/Vagrant cheatsheet.md)
 - [вопросы](PHP/вопросы.md)
