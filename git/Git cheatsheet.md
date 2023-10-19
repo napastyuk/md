@@ -36,7 +36,7 @@ git reset --hard origin/master
 
 ---
 
-## Склонировать в текущую папку не создавая имя репозитория
+## Склонировать в текущую папку не создавая папку с именем репозитория
 `git clone https://github.com/napastyuk/md.git .`
 
 ---
@@ -118,6 +118,13 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 `git branch --delete Название_ветки`
 или
 `git branch -D Название_ветки`
+
+---
+
+## Создать локальную ветку из удалённой и перейти на неё
+`git checkout --track origin/1605-dashbord`
+- oпция `--track` явно указывает, что новая ветка создается на основе удалённой ветки `origin/1605-dashbord`. 
+- `origin/1605-dashbord` - это имя удалённой ветки, которая будет использоваться как исходная точка для создания новой локальной ветки.
 
 
 #git #cheatsheet 
