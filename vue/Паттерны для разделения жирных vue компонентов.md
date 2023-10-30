@@ -15,3 +15,6 @@
 ## Сервисные функции/Serviсe function
 По аналогии с предыдущим пунктом, но выносим только логику отвечающую за обработку данных и бизнес логику.  
 
+Примеры кода, есть в первоисточнике https://vuejsdevelopers.com/2017/06/11/vue-js-extending-components/#renderless-components
+
+
