@@ -10,15 +10,15 @@ password = 'password'
 ```php
 $configuration = parse_ini_file('config.ini',true);
 $connection = mysqli_connect(
-    $configuration['db']['host'],
-    $configuration['db']['user'],
-    $configuration['db']['password'],
-    $configuration['db']['database']
+	$configuration['db']['host'],
+	$configuration['db']['user'],
+	$configuration['db']['password'],
+	$configuration['db']['database']
 );
 
 if(!$connection) {
-    echo "Невозможно подключится к БД";
-    die();
+	echo "Невозможно подключится к БД";
+	die();
 }
 ```
 

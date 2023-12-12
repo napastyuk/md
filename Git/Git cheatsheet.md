@@ -126,5 +126,13 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 - oпция `--track` явно указывает, что новая ветка создается на основе удалённой ветки `origin/1605-dashbord`. 
 - `origin/1605-dashbord` - это имя удалённой ветки, которая будет использоваться как исходная точка для создания новой локальной ветки.
 
+Проверить разницу с `git checkout -b <branch> --track <remote>/<branch>`
+
+---
+## Просмотреть список файлов изменённых в последнем коммите
+`git log -1 --stat --oneline`
+
+тоже самое но для всех комитов в ветке, при условии что все комиты тегались
+`git log --name-status --pretty="" --grep=TASK_NUMBER`
 
 #git #cheatsheet 
