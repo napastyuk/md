@@ -57,10 +57,11 @@ function CRYPTORATES(from_coin_id,to_coin_id,amount = 1) {
   const response = UrlFetchApp.fetch(endpoint, options);
   const content = response.getContentText(); //Декодируем строку ответа
   const result = JSON.parse(content); //Превращаем все еще строку в объект, с которым можно работать
-  const resultPrice = Object.values(result.data.quote)[0].price;
-  cache.put(cacheName, resultPrice , 60);
+  const resultPrice = Object.values(result.data.quote)[0].price.toString();
+  //const commaSeparateResult = resultPrice.replace('.', ','); //В гугл таблицах целая часть отделяется запятой! не нужно
+  cache.put(cacheName, commaSeparateResult , 60);
   //Logger.log('результат из сети', resultPrice);
-  return resultPrice;
+  return commaSeparateResult;
   // Logger.log(Object.values(result.data.quote)[0].price)
 }
 
