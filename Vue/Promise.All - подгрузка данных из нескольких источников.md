@@ -26,5 +26,18 @@ mounted() {
 //...
 ```
 
+аналогично для vanila
+Первый Promise.all отправляет fetch
+Второй Promise.all объединяет response
+```javascript
+Promise.all([
+    fetch('https://jsonplaceholder.typicode.com/posts'), 
+    fetch('https://jsonplaceholder.typicode.com/users')
+    ])
+.then(responses=>Promise.all(responses.map(response=>response.json())))
+.then(data => console.log(data))
+.catch(error=>console.log(error));
+
+```
 
 #vue2 #vue2 #асинхронность

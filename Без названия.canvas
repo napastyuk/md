@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"424690c157a9b627","x":-320,"y":-360,"width":250,"height":60,"type":"text","text":"карточка 1"},
+		{"id":"9fc82c88ab882706","x":-125,"y":-30,"width":250,"height":60,"color":"2","type":"text","text":"карточка 2"}
+	],
+	"edges":[
+		{"id":"96c412cf7582e47b","fromNode":"424690c157a9b627","fromSide":"bottom","toNode":"9fc82c88ab882706","toSide":"top"}
+	]
+}
