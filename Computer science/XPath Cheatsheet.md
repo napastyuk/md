@@ -53,7 +53,7 @@ tagName[@attribute='value']
 Еще примеры
 ````xml
 //*  - все элементы
-
+//h2[@class='current__price']/text()[2]   - получить текст из h2[class='current__price'] 
 ````
 
 
