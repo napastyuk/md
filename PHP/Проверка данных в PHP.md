@@ -1,3 +1,5 @@
+## Проверка на пустоту
+
 Проверка на null
 ```php
 $some = null;
@@ -28,9 +30,45 @@ $newVar = $oldVar ?? 'default_value';
 
 Мнемоническое правило: `isset()` проверяет есть ли у тебя кошелек, а `empty()` проверяет есть ли кошелек и лежит ли что-то в нем.
 
-Проверка на тип данных
+## Проверка на тип данных
+
 ```php
 gettype($value) //возвращает строку с типом https://www.php.net/manual/ru/function.gettype.php
 ```
+Возможными значениями возвращаемой строки являются:
+- boolean
+- integer
+- double (по историческим причинам в случае типа float возвращается double, а не просто float)
+- string
+- array
+- object
+- resource
+- resource (closed)
+- NULL
+- unknown type
+
+Проверка каждого типа по отдельности
+```php
+is_bool();
+is_int();
+is_integer(); //псевдоним для is_int
+is_long(); //тоже псевдоним для is_int
+is_double();
+is_float();
+is_real(); //псевдоним для is_float
+is_string();
+is_array();
+is_object();
+is_resource();
+is_null();
+
+//а так же более сложные проверки
+is_callable(); //проверяет, что значение может быть вызвано как функция в текущей области видимости
+is_countable(); //проверяет, принадлежит ли значение переменной типу array или Countable
+is_iterable(); //проверяет что значение иттерируемое
+is_numeric(); //Проверяет, содержит ли переменная число или числовую строку
+is_scalar(); //Проверяет, представляет ли собой переменная скаляр(int, float, string или bool)
+```
+
 
 #php/типизация 

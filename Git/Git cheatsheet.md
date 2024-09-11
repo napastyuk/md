@@ -16,7 +16,7 @@
 ---
 
 ## error: The following untracked working tree files would be overwritten by merge
-Remote файлы несовпадают с локальными. Перепишем в пользу удаленных
+Remote файлы не совпадают с локальными. Перепишем в пользу удаленных
 ```bash
 git fetch --all
 git reset --hard origin/master
@@ -69,11 +69,11 @@ git reset --hard origin/master
 
 
 #### Если еще не добавлял в stage
-`git checkout -- .` - переместить все файлы в состояние последнего комита. 
+`git checkout -- .` - переместить все файлы в состояние последнего коммита. 
 `git reset --hard` -  скинуть все файлы до состояния последнего коммита, в том числе изменения в stage 
 
 #### Если уже добавил в stage
-`git reset` перемещение указателя. Изменения останутся в файлах, но уйдут из stage и commit, т е полностью уйдут из истории гита. Сами измененяи можно будет откатить через `git restore file` или `git checkout -- file`.
+`git reset` перемещение указателя. Изменения останутся в файлах, но уйдут из stage и commit, т е полностью уйдут из истории гита. Сами изменения можно будет откатить через `git restore file` или `git checkout -- file`.
 
 Пример:
 `git reset HEAD~1` - откатить все на один коммит назад
@@ -84,7 +84,7 @@ git reset --hard origin/master
 
 
 ### Rebase
-`git rebase BranchName` - пермещает комиты из текущей ветки поверх ветки BranchName. То есть
+`git rebase BranchName` - перемещает коммиты из текущей ветки поверх ветки BranchName. То есть
 1. Ищется общий коммит текущей ветки и BranchName. Он будет точкой отсчёта
 2. Дальше последовательно берётся комиты из текущей ветки и применяется сверху ветки BranchName.  Поэтому если хочешь вылить *в мастер*,  аргументом надо указывать *master* , а находит при этом в *feature* 
 Можно еще так `git rebase `
@@ -136,3 +136,4 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 `git log --name-status --pretty="" --grep=TASK_NUMBER`
 
 #git #cheatsheet 
+

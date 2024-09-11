@@ -41,7 +41,14 @@ npm start
 npm test
 # все остальные скрипты должны запускаться через команду
 npm run yourScript
+
+
+#полностью удалить старые пакеты
+rm -rf package-lock.json node_modules/
+npm cache clean --force
 ```
+
+	
 
 Кодирование версий в package.json
 
@@ -61,3 +68,9 @@ major.minor.patch
 ```
 
 --legacy-peer-deps
+
+
+Для того чтобы обновить пакет с припиненой версией, можно в package.json прописать
+```
+"same-pcg": "latest",
+```
