@@ -84,6 +84,8 @@ docker volume ls -f dangling=true # вывести список
 docker volume prune # удаление
 ```
 
+Docker Desktop устанавливает 2 внутренних дистрибутива Linux специального назначения docker-desktop и docker-desktop-data. Первый (docker-desktop) используется для запуска ядра Docker (dockerd), а второй (docker-desktop-data) хранит контейнеры и образы. Ни то, ни другое нельзя использовать для общего развития.
+
 
 
 

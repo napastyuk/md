@@ -4,3 +4,11 @@
 wsl.exe --status #Проверить версию ядра
 wsl.exe -l-v #Проверить что дистрибутывы переключились на wsl 2
 ```
+
+Хранение файлов
+```
+\\wsl.localhost\Ubuntu\home\ilya\speech-analytic\portal\front
+```
+
+
+

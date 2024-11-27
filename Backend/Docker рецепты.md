@@ -23,3 +23,8 @@ docker run "some_container_name"
    `-d` - запускать в фоне
    `-p 80:80` - прокинуть порт 80 контейнера на порт 80 сетевой карты
 
+
+Удалить все лишнее
+```
+docker system prune -a --volumes
+```
