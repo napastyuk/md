@@ -1,7 +1,7 @@
 ```
 /*
 * this.sourceArr - массив в котором все происходит
-* oldPosition и newPosition - соотвественно индексы позицый передвигаемых элементов
+* oldPosition и newPosition - соотвественно индексы позиций передвигаемых элементов
 */
 this.sourceArr[newPosition] = this.sourceArr.splice(oldPosition, 1, this.sourceArr[newPosition])[0]
 ```
