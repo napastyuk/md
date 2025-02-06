@@ -130,10 +130,18 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 
 ---
 ## Просмотреть список файлов изменённых в последнем коммите
-`git log -1 --stat --oneline`
+```
+git log -1 --stat --oneline
+```
 
-тоже самое но для всех комитов в ветке, при условии что все комиты тегались
-`git log --name-status --pretty="" --grep=TASK_NUMBER`
+тоже самое но без пути а только имена файлов
+```
+git log -3 --name-only --pretty=format: | sed 's_.*/__'
+```
+
+```
+git log -3 --name-only --pretty=format: | awk -F'/' '{print $NF}'
+```
 
 #git #cheatsheet 
 
