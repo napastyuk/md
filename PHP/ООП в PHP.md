@@ -115,33 +115,3 @@ echo self::$name;
 `public` - доступ разрешён отовсюду 
 `protected` - разрешён самому классу и его наследникам
 `private` - доступ только внутри самого класса
-
-
-## Пространство имён
-Создание
-```php
-/*person.php*/
-namespace base
-
-class Person
-{
-}
-```
-
-Обращение
-```php
-include "person.php";
-$tom = new \base\Person()
-//или
-use \base\classes\Person as User
-```
-
-Пространства имён могут быть вложенными 
-
-Подключать можно не только классы, но и константы и функции
-```php
-use \base\classes\Person;
-use const \base\classes\adminName;
-use function \base\classes\printPerson;
-
-```
