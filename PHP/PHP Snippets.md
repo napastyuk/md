@@ -49,3 +49,12 @@ mail($to, $subject, $message, $headers);
 
     echo "</ul>";
 ```
+
+
+## Запуск PHP REPL
+
+```bash
+php -a
+
+php > echo "123"; //123
+```
