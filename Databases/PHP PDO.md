@@ -16,3 +16,5 @@ catch (PDOException $e) {
 ```php
 $pdo = new \PDO($dsn, $user, $pass, $options);
 ```
+
+#php/db
