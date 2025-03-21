@@ -61,6 +61,8 @@ sudo -u postgres createuser --interactive
 Создаем базу
 ```bash
 sudo -u postgres createdb --owner=ilya hexlet
+#или 
+sudo -u postgres createdb -O ilya hexlet
 ```
 Проверяем какие базы есть в postgres
 ```bash
@@ -148,3 +150,6 @@ psql -h server_address -U username -d dbname
 \l # список баз даннных 
 \dt # список таблиц в текущей базе
 ```
+
+
+#php/db #sql

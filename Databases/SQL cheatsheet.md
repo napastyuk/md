@@ -29,6 +29,8 @@ DROP DATABASE hexlet_db;      --удаление
 CREATE TABLE users ( first_name VARCHAR(50) );  -- создание
 
 SELECT * FROM users;  -- чтение
+-- Или для более быстрого запроса, определённые поля(столбцы)
+SELECT name FROM users;  -- чтение
 
 DROP TABLE users;   -- удаление
 ```
@@ -43,10 +45,12 @@ ALTER TABLE users RENAME TO customers;            -- переименовани�
 ### Работа с записями
 ```sql
 INSERT INTO users (first_name) VALUES ('Lucienne');   -- создание
+-- если поле в БД обязательное , то ставим NULL
 
 SELECT * FROM users WHERE first_name = 'Ramiro';  -- чтение
 
-UPDATE users SET first_name = 'Casimer' WHERE first_name = 'Lucienne';  -- редактирование
+UPDATE users SET first_name = 'Casimer' WHERE id = 1;  -- редактирование
+-- во всех случаях вместо `id=1` можно использовать все стандартные операторы: `= != < >`
 
 DELETE FROM users WHERE first_name = 'Casimer';   -- удаление
 
@@ -59,4 +63,4 @@ DELETE FROM users WHERE first_name = 'Casimer';   -- удаление
 ```
 
 
-#sql
+#sql #php/db

@@ -15,7 +15,8 @@
 Пример вставки данных
 ```sql
 CREATE TABLE students (
-  id bigint, 
+  -- Одновременное использование и первичного ключа и автогенерации
+  id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   first_name VARCHAR(50), 
   last_name VARCHAR(50), 
   email VARCHAR(255), 
@@ -25,12 +26,17 @@ CREATE TABLE students (
   created_at TIMESTAMP
 );
 
-INSERT INTO students (id, first_name, last_name, email, bio, is_studying, updated_at, created_at)
+INSERT INTO students (first_name, last_name, email, bio, is_studying, updated_at, created_at)
 VALUES 
-(1, 'Vasya', 'Pupkin', 'vasya@hexlet.test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis massa ut neque gravida pellentesque.', TRUE, '2024-01-01', '2024-01-01'),
-(1, 'Vasya', 'Pupkin', 'vasya@hexlet.test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis massa ut neque gravida pellentesque.', TRUE, '2024-01-01', '2024-01-01')
+('Vasya', 'Pupkin', 'vasya@hexlet.test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis massa ut neque gravida pellentesque.', TRUE, '2024-01-01', '2024-01-01'),
+('Vasya', 'Pupkin', 'vasya@hexlet.test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis massa ut neque gravida pellentesque.', TRUE, '2024-01-01', '2024-01-01')
 ```
+
+- текстовое значение в ячейку всегда оборачивается только в одинарные кавычки
+- если есть сложности с названием колонок их можно обернуть в магические кавычки     \` title\` 
 
 Песочница https://www.db-fiddle.com/
 
 Ссылка на доку (ru)  https://postgrespro.ru/docs/postgresql/17/datatype
+
+#sql #php/db
