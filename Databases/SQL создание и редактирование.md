@@ -31,10 +31,34 @@ VALUES (
 	'1973-08-15', 
 	'male', 
 	101, 
-	'2023-05-01', 
+	Now(), 
 	'22222'
 );
 ```
+В `INSERT INTO` можно не перечислять поля если в  `VALUES` они все указаны. НО если в таблице есть автоматические поля (`GENERATED ALWAYS AS IDENTITY`) то перечислять надо все кроме автоматического поля. 
+
+Пример с вторичным ключом
+```sql
+CREATE TABLE brands (
+    id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name varchar(255),
+    discount int
+);
+
+CREATE TABLE cars (
+    id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    brand_id bigint REFERENCES brands (id),
+    model varchar(255),
+    price int
+);
+
+INSERT INTO brands (name, discount) VALUES
+('bmw', 5);
+
+INSERT INTO cars (brand_id, model, price) VALUES
+(1, 'm5', 5500000);
+```
+
 
 ## Редактирование UPDATE
 
@@ -54,6 +78,12 @@ WHERE
 	- объединять условия через `AND` `OR`  
 	- группировать условия с помощью `(` `)` 
 
+`UPDATE` может содержать внутри выражения.  Правда тогда теряется идемпотентность.
+```sql
+UPDATE accounts SET amount = amount - 50 WHERE user_id = 10;
+```
+
+
 ## Удаление DELETE
 ```sql
 DELETE FROM                     -- оператор 
@@ -67,3 +97,32 @@ DELETE FROM users;   -- удаляет таблицу целиком
 
 TRUNCATE users;      -- делает тоже самое но быстрее
 ```
+
+
+## Транзакции
+
+Транзакция это когда составная операция либо выполнилась целиком, либо откатилась в состояние до начала выполнения.
+
+```sql
+BEGIN;  -- начало транзакции
+UPDATE accounts SET amount = amount - 50 WHERE user_id = 10;   -- операция один
+--ROLLBACK;   -- если мы захотим то принудителььно закрываем транзакцию и откатываем
+
+UPDATE accounts SET amount = amount + 50 WHERE user_id = 30;    -- операция два
+COMMIT;  -- завершение транзакции
+``` 
+
+ Еще один пример с переносом строки
+ ```sql
+BEGIN;
+-- переносим пример с первого пользователя на второго
+DELETE FROM user_items WHERE username = 'lord_mormont' AND item = 'Longclaw';
+INSERT INTO user_items (username, item, received_at) VALUES ('jon', 'Longclaw', NOW());
+COMMIT;
+```
+
+Требования к транзакциям ASID:
+- **Atomicity** (Атомарность) - транзакция не может выполниться частично. Она либо выполняется вся, либо не выполняется вообще, т е система откатывается в состояние до начала транзакции. 
+- **Consistency** (Согласованность) - завершившаяся транзакция должна сохранять согласованность базы данных. То есть данные в БД и до и после транзакции допустимые. 
+- **Isolation** (Изолированность) - транзакции не могут влиять друг на друга в процессе выполнения
+- **Durability** (Устойчивость) - даже если с системой случилось что-то внештатное, все завершенные транзакции должны остаться записанными на диске.
