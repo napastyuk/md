@@ -12,7 +12,7 @@
 Пример:
 ```sql
 CREATE TABLE users (
-  id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  id bigint PRIMARY KEY GENERATED IDENTITY AS IDENTITY,
   username VARCHAR(50) UNIQUE NOT NULL,
   birthday DATE,
   email_confirmed BOOLEAN,
@@ -55,3 +55,6 @@ ALTER TABLE users ADD CONSTRAINT unique_name UNIQUE (name);  -- установк
 ALTER TABLE users DROP CONSTRAINT unique_name;               -- снятие UNIQUE через DROP CONSTRAINT
 
 ```
+
+
+#sql #php/db
