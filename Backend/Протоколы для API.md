@@ -6,7 +6,7 @@ tags:
   - gRPC
   - GraphQL
   - API
-  - CS/архитектура
+  - computer-science/архитектура
 aliases:
   - Протоколы обмена данными в web-приложениях
 ---

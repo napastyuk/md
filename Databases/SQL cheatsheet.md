@@ -14,7 +14,10 @@ WHERE age > 18;
 
 ### Работа с базами
 ```sql
-CREATE DATABASE hexlet_db;   -- создание
+createdb -T template0 cinama  -- создание БД
+
+CREATE DATABASE hexlet_db TEMPLATE template0;   -- тоже самое из SQL 
+-- без указания template тоже можно, по умолчанию возьмётся template1 
 
 SELECT datname FROM pg_database; -- чтение списока всех баз для PG
 

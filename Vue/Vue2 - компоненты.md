@@ -33,7 +33,7 @@
       };
     },
     template:
-      '<button v-on:click="count++">Счётчик кликов — {{ count }}</button>',
+      '<button v-on:click="count++">Счётчик кликов - {{ count }}</button>',
   });
 
   new Vue({
