@@ -95,6 +95,11 @@ docker-compose down -v #остановка и удаление volume
 docker-compose restart  #перезапуск
 
 docker-compose logs -f  #просмотр логов
+
+docker exec -it postgres_container bash  #подключение к консоли контейнера
+
+psql -U postgres # подключение к psql
+
 ```
 
 подробнее про [Docker compose](Docker%20compose.md)
