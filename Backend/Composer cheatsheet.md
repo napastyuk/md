@@ -33,6 +33,15 @@ semver
 major.minor.patch
 
 
+Проверка установки
+```bash
+composer --version -vvv  //debug info
+
+where composer //win version
+which composer //linux version
+```
+
+
 ##   Composer.lock
 Фиксирует транзитивные зависимости. Если указаны разные версии в `composer.lock` и `composer.json`   команда `install` сначала проверяет что указано в `composer.lock`.
 

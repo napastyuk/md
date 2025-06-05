@@ -1,3 +1,4 @@
+## Стандартные исключения
 Пример кода который выбрасывает исключение
 ```php
 try {
@@ -38,4 +39,22 @@ throw new \InvalidArgumentException('Ошибка')
 - Символ `\` используется для указания на то, что `Exception` - это глобальный класс исключений
 
 
+## Кастомные исключения
 
+```php
+//MyProject\Exceptions\CliException.php
+namespace MyProject\Exceptions;
+class CliException extends \Exception
+{
+}
+
+//Main_file.php
+try {
+    // код, который может выбросить исключение
+} catch (CliException $e) {
+    echo "CLI error: " . $e->getMessage();  //кастомное исключение
+} catch (\Exception $e) {
+    echo "General error: " . $e->getMessage();  //стандартное исключение исключение
+}
+```
+Класс `CliException` может быть пустым. Методы туда можно будет добавить если понадобятся нестандартные методы у ошибок.

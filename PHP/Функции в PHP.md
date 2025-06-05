@@ -27,7 +27,7 @@ function name(int $first = 0 , &int $second = 0): void //функция ниче
 
 ### Передача неизвестного количества параметров
 ```php
-function test(...$items) {
+function test(...$items): ?string {  //функция может вернуть строку или null
 	foreach ($items as $args) {
 		echo $args;
 	}

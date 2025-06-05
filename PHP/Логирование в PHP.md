@@ -46,3 +46,7 @@ function logToConsole($data) {
 
 logToConsole(['message' => 'Hello from PHP', 'level' => 'info']);
 ```
+
+
+
+file_put_contents('data.json', json_encode($array, JSON_PRETTY_PRINT));
