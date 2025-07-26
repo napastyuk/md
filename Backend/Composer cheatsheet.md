@@ -1,5 +1,22 @@
 #php/инструменты
 
+Для установке в проекте. Создаем пустой composer.json
+```json
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}
+```
+
+и запускаем
+```
+comsposer install
+```
+
+остальные команды
 `composer require phpmailer/phpmailer`  - установить пакет
 `composer remove phpmailer/phpmailer`  - удалить пакет
 `composer update vendor-name/project-name` - обновить пакет

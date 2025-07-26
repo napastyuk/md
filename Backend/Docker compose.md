@@ -65,3 +65,13 @@ db:
 	volumes: 
 		- db_data:/var/lib/mysql
 ```
+
+
+### Ошибки
+```bash
+$ docker-compose up -d
+time="2025-07-15T23:24:46+03:00" level=warning msg="C:\\projects\\otus\\final_work\\investor-portfolio\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+unable to get image 'php:7-alpine': error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.48/images/php:7-alpine/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+```
+
+Забыл запустить Docker-desktop

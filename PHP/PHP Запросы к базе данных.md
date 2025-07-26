@@ -1,4 +1,4 @@
-#php/базы_данных
+#php/db
 ## Подключение к БД
 ```ini
 [db]
@@ -23,13 +23,13 @@ if(!$connection) {
 }
 ```
 
-## Обычный запрос
+## Обычный запрос через mysqli
 ```php
     $select = "SELECT * FROM users WHERE login = 'otus'";
     $result = mysqli_query($connection, $select);
 ```
 
-## Подготовленный запрос
+## Подготовленный запрос через mysqli
 ```php
     $userSqlStatement = mysqli_prepare($connection, "SELECT * FROM users WHERE login = ?");    
     mysqli_stmt_bind_param($userSqlStatement, "s", $login);

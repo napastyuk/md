@@ -97,7 +97,7 @@ git reset --hard origin/master
 ---
 
 ## Поиск по истории коммитов
-```console
+```bash
 git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 ```
 Полезные параметры
@@ -130,18 +130,31 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 
 ---
 ## Просмотреть список файлов изменённых в последнем коммите
-```
+```bash
 git log -1 --stat --oneline
 ```
 
 тоже самое но без пути а только имена файлов
-```
+```bash
 git log -3 --name-only --pretty=format: | sed 's_.*/__'
 ```
 
-```
+```bash
 git log -3 --name-only --pretty=format: | awk -F'/' '{print $NF}'
 ```
+
+---
+## Убрать файл из git кеша, если случайно добавил в stash
+Если файл попал в кеш, но теперь добавлен в `.gitignore`, его нужно удалить из индекса:
+```bash
+git rm --cached имя_файла
+```
+
+или для папки целиком
+```bash
+git rm -r --cached директория/
+```
+
 
 #git #cheatsheet 
 
