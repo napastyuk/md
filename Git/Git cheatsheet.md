@@ -91,13 +91,13 @@ git reset --hard origin/master
 
 ---
 
-## Копирование комитов
+## Копирование коммитов
 `git cherry-pick <Commit1> <Commit2> <...>` - очень прямолинейный способ сказать, что ты хочешь копировать несколько коммитов на место, где сейчас находишься (`HEAD`)
 
 ---
 
 ## Поиск по истории коммитов
-```console
+```bash
 git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 ```
 Полезные параметры
@@ -130,18 +130,56 @@ git log --pretty=format:"%h - %an, %ar : %s" --no-merges -S"Hello, World!"
 
 ---
 ## Просмотреть список файлов изменённых в последнем коммите
-```
+```shell
 git log -1 --stat --oneline
 ```
 
 тоже самое но без пути а только имена файлов
-```
+```shell
 git log -3 --name-only --pretty=format: | sed 's_.*/__'
 ```
 
-```
+```shell
 git log -3 --name-only --pretty=format: | awk -F'/' '{print $NF}'
 ```
+
+---
+## Проверить сливалась ли ветка в мастер локально или удалённо
+
+```shell
+git branch -a --merged master | grep 999
+```
+где 999 имя ветки которую надо проверить
+
+либо
+```shell
+git log master --grep=999
+```
+найти все коммиты в мастере которые содержат упоминание ветки 999
+
+----
+## Уточнить параметры удалённого репозитория
+
+Адрес удаленного репозитория
+```shell
+git remote -v
+
+# пример ответа
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push) 
+```
+
+к какому веткам привязано.  * это  текущая ветка
+```shell
+git branch -vv
+
+#пример ответа
+* master 12345678 [origin/master] Some commit message
+```
+
+
+
+
 
 #git #cheatsheet 
 
