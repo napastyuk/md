@@ -190,6 +190,14 @@ git branch -vv
 * master 12345678 [origin/master] Some commit message
 ```
 
+___
+## Поправить ошибки во время коммита
+
+```bash
+rm .git/COMMIT_EDITMSG 
+rm .git/logs/HEAD
+rm .git/logs/refs/heads/master
+```
 
 
 
