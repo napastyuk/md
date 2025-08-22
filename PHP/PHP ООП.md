@@ -141,5 +141,5 @@ echo 'Людей уже ' . Human::getCount(); // 0
 ```
   
   
-  Еще про static тут [OOP в картинках](OOP%20в%20картинках.excalidraw.md#^3SoR44os)   и тут [Функции в PHP](Функции%20в%20PHP.md)
+  Еще про static тут [OOP в картинках](PHP%20OOP%20в%20картинках.excalidraw.md#^3SoR44os)   и тут [PHP Функции](PHP%20Функции.md)
 

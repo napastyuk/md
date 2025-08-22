@@ -74,7 +74,7 @@ services:
       POSTGRES_PASSWORD: secret
       POSTGRES_DB: mydb
     ports:
-      - "5432:5432"
+      - "6432:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
 
