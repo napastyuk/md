@@ -1,0 +1,56 @@
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Dev as 💻 Разработчик
+    participant GitLab as 🖥️ 1. GitLab Сервер
+    participant Runner as ⚙️ 2. Build-Сервер (Runner)
+    participant Registry as 📦 3. Container Registry
+    participant Prod as 🚀 4. Production-Сервер
+
+    Note over Dev, GitLab: ШАГ 1: Пуш кода
+    Dev->>GitLab: git push (Исходный PHP + JS код)
+    activate GitLab
+    Note over GitLab: Видит .gitlab-ci.yml<br/>Создает задачу на сборку
+
+    Note over GitLab, Runner: ШАГ 2: Получение задачи
+    Runner->>GitLab: HTTPS-запрос: "Есть ли работа?" (Long-polling)
+    GitLab-->>Runner: Отдает исходный код проекта + инструкции сборки
+    deactivate GitLab
+    activate Runner
+
+    Note over Runner: ШАГ 3: Тяжелая сборка
+    Note over Runner: 1. npm install && npm run build (сжатие JS)<br/>2. composer install (зависимости PHP)<br/>3. Упаковка всего в Docker-образ
+
+    Note over Runner, Registry: ШАГ 4: Сохранение образа
+    Runner->>Registry: docker login (Авторизация)
+    Runner->>Registry: docker push (Отправляет готовый образ приложения)
+    activate Registry
+    Note over Registry: Сохраняет образ под тегом 'latest'<br/>(Разбивает его на неизменяемые слои)
+    Registry-->>Runner: Подтверждение: Образ успешно сохранен
+    deactivate Registry
+
+    Note over Runner, Prod: ШАГ 5: Команда на деплой
+    Runner->>Prod: SSH-подключение (Авторизация по ключу)
+    Note over Prod: Выполняет команды внутри Прод-сервера
+    Runner->>Prod: Команда: "docker login && docker pull && docker compose up -d"
+    deactivate Runner
+    activate Prod
+
+    Note over Prod, Registry: ШАГ 6: Скачивание и запуск сайта
+    Prod->>Registry: docker pull (Запрос свежего образа)
+    activate Registry
+    Registry-->>Prod: Отдает ТОЛЬКО изменившийся слой (например, 5 МБ PHP-кода)
+    deactivate Registry
+    Note over Prod: Мгновенно перезапускает контейнер
+    Note over Prod: Сайт обновлен без даунтайма!
+    deactivate Prod
+```
+
+
+Как читать эту схему:
+
+1. **Разработчик** отправляет исходный PHP+JS код на **Сервер GitLab**.
+2. **Build-Сервер** забирает задачу по безопасному протоколу HTTPS (изнутри наружу, поэтому порты на сборщике открывать не нужно).
+3. **Build-Сервер** берет на себя всю тяжелую работу (компиляцию JS, установку пакетов composer) и отправляет готовый монолитный Docker-образ на **Сервер Хранилища (Registry)**.
+4. **Build-Сервер** на секунду заглядывает по SSH на **Прод** и говорит ему: _«Пора обновляться!»_.
+5. **Прод** мгновенно скачивает из **Registry** только новые 5 мегабайт изменившегося PHP/JS-кода (все тяжелые слои с Linux и окружением у него уже есть) и перезапускает контейнер без простоев для пользователей.
